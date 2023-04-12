@@ -133,6 +133,22 @@ html {
   font-weight: bolder;
 }
 
+.input-box::after{
+  content: "";
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: -2%;
+  display: block;
+  border: 2px solid white;
+  width: 30%;
+  opacity: 0;
+  transition: all 600ms ease-in-out;
+}
+.input-box:hover:after{
+  width: 100%;
+  opacity: 1;
+}
 .input-boxes label {
   font-size: 1.5rem;
   font-weight: bold;
@@ -216,10 +232,12 @@ html {
   flex-wrap: wrap;
 }
 .input-boxes .input-box {
+  position: relative;
   width: 48%;
   height: fit-content;
   margin: 2rem 0rem;
   border-bottom: 1px solid white;
+  transition: all 600ms ease-in-out;
 }
 
 @media (max-width: 767px) {
