@@ -22,6 +22,7 @@ html {
   background-position: center;
   background-size: cover;
   opacity: 0.8;
+  background-attachment: fixed;
 }
 
 .navbar {
@@ -116,14 +117,19 @@ html {
   border-radius: 0.5rem;
   margin-left: 1rem;
   transition: all 600ms ease-in-out;
+
+  &:hover{
+    background-color: rgb(233, 231, 231);
+  }
 }
+/* ###### end nav section ######## */
 
 .transparant-box {
   height: fit-content;
   background-color: rgba(26, 26, 26, 0.433);
   border-radius: 1rem;
   padding: 5em 3em;
-  box-shadow: 0rem 0rem 1.5rem rgba(255, 255, 255, 0.104);
+  box-shadow: 0rem 0rem 1rem rgba(255, 255, 255, 0.104);
 }
 
 .med-heading {
